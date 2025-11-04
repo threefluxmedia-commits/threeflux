@@ -36,9 +36,9 @@ header {
 }
 
 nav a {
-  color: #fff;
+  color: #4fbf24;
   margin-left: 1.5rem;
-  font-weight: 300;
+  font-weight: 150;
 }
 
 nav a:hover {
@@ -171,4 +171,5 @@ footer {
     padding: 3rem 1.5rem;
   }
 }
+
 
