@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My GoDaddy Site</title>
+  <meta name="description" content="A simple static page hosted on my domain" />
+  <style>
+    body { font-family: system-ui, Arial; max-width: 800px; margin: 4rem auto; padding: 1rem; line-height:1.6; }
+    header { text-align:center; margin-bottom:2rem; }
+    .btn { display:inline-block; padding:.6rem 1rem; border-radius:6px; border:1px solid #333; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello — my site is live!</h1>
+    <p>Hosted at <strong>yourdomain.com</strong></p>
+    <a class="btn" href="/about.html">About</a>
+  </header>
+
+  <main>
+    <h2>Welcome</h2>
+    <p>This is a static HTML page. Edit <code>index.html</code> and upload it to your hosting.</p>
+  </main>
+
+  <footer>
+    <p style="font-size:.9rem; color:#666;">© <span id="year"></span> My Site</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
