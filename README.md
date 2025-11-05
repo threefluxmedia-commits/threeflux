@@ -1,35 +1,31 @@
 # ThreeFlux Media 🌐
 
-A modern, responsive landing page for **ThreeFlux Media** — a social media marketing team that helps brands and businesses grow their online presence through creative strategy, paid campaigns, and influencer marketing.
+A professional, multi-page marketing site for **ThreeFlux Media**, a social media marketing agency helping brands and businesses grow through creative digital strategy.
 
 ---
 
-## 🚀 Overview
+## 🧭 Pages
 
-ThreeFlux Media provides full-service social media marketing to help clients:
-- Build authentic online communities  
-- Generate measurable engagement and conversions  
-- Create viral and consistent brand experiences  
-
-The website serves as an online presence and lead-generation tool.
+- **index.html** — Home / Services overview  
+- **about.html** — About the team and company mission  
+- **contact.html** — Contact form and contact info  
 
 ---
 
-## 🧩 Features
+## 🚀 Features
 
-- Fully responsive and mobile-friendly
-- Modern, minimal aesthetic
-- Animated hover effects and CTA buttons
-- SEO-optimized HTML structure
-- Clean and modular CSS design
+- Fully responsive layout  
+- Shared CSS for consistency  
+- Clean and modern design  
+- Contact form layout ready for backend integration  
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **HTML5**
-- **CSS3 (Custom, no frameworks yet)**
-- *(Future upgrade: Tailwind CSS, React, or Next.js for scalability)*
+- **CSS3**
+- *(Optional upgrade: Tailwind CSS or React for scalability)*
 
 ---
 
