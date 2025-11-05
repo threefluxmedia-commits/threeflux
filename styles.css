@@ -286,5 +286,10 @@ footer {
   -webkit-text-fill-color: transparent;
 }
 
+.hero,
+.page-hero {
+  margin-top: 6rem; /* or padding-top if you prefer */
+}
+
 
 
