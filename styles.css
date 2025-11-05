@@ -6,6 +6,57 @@
   --bg-light: #f9fafb;
 }
 
+/* ---------- Fix for fixed header + heading overlap ---------- */
+/* 1) explicit header height used for offsets */
+:root {
+  --header-height: 72px; /* adjust if your header is taller/shorter */
+}
+
+/* Enforce header height and vertical centering */
+header {
+  height: var(--header-height);
+  line-height: var(--header-height);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+/* 2) add top offset to the main flow so top content isn't behind header */
+body {
+  /* ensure the body content begins below the fixed header */
+  padding-top: var(--header-height);
+}
+
+/* 3) make headings (anchor targets) respect the header when scrolled to */
+.hero h1,
+.page-hero h1,
+.section h2 {
+  scroll-margin-top: calc(var(--header-height) + 1rem); /* 1rem breathing room */
+}
+
+/* 4) ensure hero content is perfectly centered and not shifted */
+.hero {
+  display: flex;
+  align-items: center;      /* vertical centering */
+  justify-content: center;  /* horizontal centering */
+  padding-top: 4rem;        /* extra top space inside hero for visual balance */
+  padding-bottom: 6rem;
+}
+
+/* Alternatively, if you prefer not to pad body globally (affects every page),
+   you can remove the body padding-top and instead add this to every top section:
+.hero, .page-hero { padding-top: calc(var(--header-height) + 3rem); }
+*/
+
+/* 5) make sure header is above everything (if not already) */
+header {
+  z-index: 9999;
+  position: fixed; /* keep fixed if you want sticky header */
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
@@ -285,4 +336,5 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
