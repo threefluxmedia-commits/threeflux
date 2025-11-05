@@ -37,7 +37,7 @@ header {
 
 nav a {
   text-decoration: none;
-  margin-left: 1.8rem;
+  margin-left: 0;
   color: var(--text-dark);
   font-weight: 600;
   position: relative;
@@ -285,6 +285,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
