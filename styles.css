@@ -126,6 +126,19 @@ nav a:hover::after, nav a.active::after {
   margin: 0 auto 3rem;
 }
 
+.cta-banner {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: var(--bg-light);
+}
+
+.cta-banner h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
 /* About */
 .about-container {
   display: flex;
@@ -272,3 +285,4 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
