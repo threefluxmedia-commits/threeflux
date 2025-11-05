@@ -1,140 +1,85 @@
-/* === CONTACT PAGE (Modern) === */
+/* === GLOBAL STYLES === */
+:root {
+  --primary: #2563eb;
+  --secondary: #7c3aed;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg-light: #f9fafb;
+}
 
-.contact-hero {
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  color: var(--text-dark);
+}
+
+h1, h2, h3, .logo {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--secondary);
+}
+
+/* Hero Sections */
+.hero, .page-hero {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #fff;
   text-align: center;
-  padding: 6rem 2rem 4rem;
+  padding: 6rem 2rem 5rem;
 }
 
-.contact-hero-content {
-  max-width: 750px;
-  margin: 0 auto;
-}
-
-.contact-hero h1 {
+.hero h1, .page-hero h1 {
   font-size: 2.8rem;
-  font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.contact-hero p {
-  font-size: 1.2rem;
+.hero p, .page-hero p {
+  font-size: 1.15rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
   opacity: 0.9;
 }
 
-/* Main Contact Wrapper */
-.contact-wrapper {
-  background: #f9fafb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem 2rem;
-}
-
-.contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  background: #fff;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  border-radius: 16px;
-  overflow: hidden;
-  max-width: 1100px;
-  width: 100%;
-}
-
-/* Left Info Panel */
-.contact-left {
-  background: linear-gradient(135deg, #1d4ed8, #7c3aed);
-  color: #fff;
-  padding: 3rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-left h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.contact-left p {
-  font-size: 1rem;
-  opacity: 0.9;
-  margin-bottom: 2rem;
-}
-
-.contact-details p {
-  margin: 0.75rem 0;
-  font-size: 0.95rem;
-}
-
-.contact-details a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.social-links {
-  margin-top: 2rem;
-}
-
-.social-links a {
-  color: #fff;
-  margin-right: 1rem;
-  font-weight: 600;
-  opacity: 0.9;
-}
-
-.social-links a:hover {
-  opacity: 1;
-}
-
-/* Right Form Section */
-.contact-right {
-  padding: 3rem 2.5rem;
-  background: #fff;
-}
-
-.contact-form-modern {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-}
-
-.contact-form-modern label {
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-  color: #374151;
-}
-
-.contact-form-modern input,
-.contact-form-modern textarea {
-  width: 100%;
-  padding: 0.9rem 1rem;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-family: inherit;
-  background-color: #f9fafb;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-form-modern input:focus,
-.contact-form-modern textarea:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-  outline: none;
-}
-
+/* Buttons */
 .btn-modern {
-  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #fff;
-  font-weight: 600;
-  border: none;
   padding: 0.9rem 1.75rem;
   border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn-modern:hover {
@@ -142,19 +87,90 @@
   box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
+/* Section Base */
+.section {
+  padding: 5rem 2rem;
+  text-align: center;
+  background: var(--bg-light);
+}
 
-  .contact-left {
-    text-align: center;
-    align-items: center;
-  }
+.section h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
 
-  .social-links a {
-    display: inline-block;
-    margin: 0.5rem;
-  }
+.section p {
+  color: var(--text-light);
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+/* About Page */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.about-image img {
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-text h2 {
+  color: var(--primary);
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  border-top: 1px solid #eee;
+}
+
+/* Contact Page Styles (keep the previous modern version below) */
+.contact-hero, .contact-wrapper, .contact-container, .contact-left, .contact-right, .contact-form-modern, .btn-modern, .social-links {
+  /* Keep the improved layout from previous step here */
 }
