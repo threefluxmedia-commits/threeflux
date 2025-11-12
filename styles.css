@@ -102,7 +102,7 @@ nav a:hover::after, nav a.active::after {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-modern {
+.btn-new {
   background: #fff;
   color: linear-gradient(135deg, var(--primary), var(--secondary));
   padding: 1rem 2rem;
@@ -295,6 +295,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
