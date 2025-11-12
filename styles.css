@@ -102,6 +102,16 @@ nav a:hover::after, nav a.active::after {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.btn-modern {
+  background: #fff;
+  color: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .btn-modern:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 15px rgba(37,99,235,0.3);
@@ -285,6 +295,7 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
