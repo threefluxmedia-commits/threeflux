@@ -297,6 +297,29 @@ footer {
 }
 
 
+.btn-send {
+  background-color: #2563eb;
+  color:#fff;
+  padding: 1rem 2rem;
+  border: 0;
+  font-family: Lato;
+  font-size: 15px;
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-send:hover {
+  cursor: pointer;
+  background-color: #7c3aed;
+  box-shadow:  0 6px 15px rgba(0,0,0,0.15);
+}
+
+.btn-send:active {
+  background-color: #fff;
+  color:#7c3aed
+}
+
+
 
 
 
